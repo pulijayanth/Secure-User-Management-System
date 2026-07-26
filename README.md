@@ -150,9 +150,6 @@ MySQL Database
 
 Add screenshots here.
 
-Example:
-
-```
 screenshots/
 ├── home
 <img width="1917" height="1027" alt="Screenshot 2026-07-26 153415" src="https://github.com/user-attachments/assets/84b04a7e-abd9-48ce-9f72-4c2dcf8bd98b" />
@@ -172,9 +169,6 @@ screenshots/
 └── delete-user.png
 <img width="1913" height="1031" alt="Screenshot 2026-07-26 153718" src="https://github.com/user-attachments/assets/18ca953b-2ac4-4ac7-8e52-d01deeb8825c" />
 
-```
-
----
 
 ## How to Run
 
