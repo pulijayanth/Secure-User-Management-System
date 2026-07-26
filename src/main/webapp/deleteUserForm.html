@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="deleteUserForm.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left">
+
+        <h1>Delete User</h1>
+
+        <p>
+            Remove a user account permanently from the system.
+        </p>
+
+        <ul>
+            <li>⚠ Permanent Action</li>
+            <li>⚠ Cannot Be Undone</li>
+            <li>⚠ Delete Carefully</li>
+        </ul>
+
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right">
+
+        <h2>Delete User Account</h2>
+
+        <form action="deleteUser.jsp" method="post">
+
+            <div class="input-box">
+
+                <label>User ID</label>
+
+                <input
+                        type="number"
+                        name="userid"
+                        placeholder="Enter User ID"
+                        required>
+
+            </div>
+
+            <button type="submit">
+
+                Delete User
+
+            </button>
+
+        </form>
+
+        <a href="index.html" class="back-btn">
+
+            ← Back to Home
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

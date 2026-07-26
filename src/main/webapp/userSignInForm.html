@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="usersignIn.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left">
+
+        <h1>Welcome Back</h1>
+
+        <p>
+            Sign in to access your account and manage users securely.
+        </p>
+
+        <ul>
+            <li>✔ Secure Login</li>
+            <li>✔ User Authentication</li>
+            <li>✔ Protected Access</li>
+        </ul>
+
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right">
+
+        <h2>User Login</h2>
+
+        <form action="signIn.jsp" method="post">
+
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" name="uname" placeholder="Enter username" required>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" name="lpass" placeholder="Enter password" required>
+            </div>
+
+            <button type="submit">
+                Sign In
+            </button>
+
+        </form>
+
+        <a href="index.html" class="back-btn">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

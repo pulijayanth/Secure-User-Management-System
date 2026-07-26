@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+
+    background:
+            radial-gradient(circle at top left,#dbeafe 0%,transparent 35%),
+            radial-gradient(circle at bottom right,#bfdbfe 0%,transparent 35%),
+            linear-gradient(135deg,#eef4ff,#f8fafc);
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    width:1080px;
+    max-width:100%;
+
+    display:flex;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:
+            0 25px 60px rgba(15,23,42,.15);
+
+}
+
+/* ================= LEFT ================= */
+
+.left{
+
+    width:35%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:45px;
+
+    color:white;
+
+    background:
+            linear-gradient(180deg,#111827,#1e3a8a);
+
+}
+
+.logo{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.circle{
+
+    width:110px;
+    height:110px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+.circle i{
+
+    font-size:46px;
+
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+}
+
+.logo h1{
+
+    font-size:58px;
+    letter-spacing:5px;
+
+}
+
+.logo h3{
+
+    margin:10px 0 20px;
+    font-weight:500;
+
+}
+
+.logo p{
+
+    color:#dbeafe;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+
+    margin-top:35px;
+
+    text-align:left;
+
+}
+
+.features div{
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    margin:18px 0;
+
+    font-size:15px;
+
+}
+
+.features i{
+
+    color:#22c55e;
+
+    font-size:17px;
+
+}
+
+/* ================= RIGHT ================= */
+
+.right{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:55px;
+
+}
+
+.right h2{
+
+    font-size:42px;
+
+    color:#111827;
+
+}
+
+.subtitle{
+
+    color:#64748b;
+
+    margin:12px 0 35px;
+
+    font-size:16px;
+
+}
+
+/* ================= MENU ================= */
+
+.menu{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:15px 22px;
+
+    border-radius:14px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.menu span{
+
+    display:flex;
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.menu a i:last-child{
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 25px rgba(37,99,235,.25);
+
+}
+
+.menu a:hover i:last-child{
+
+    transform:translateX(8px);
+
+}
+
+/* ================= BUTTON COLORS ================= */
+
+.blue{
+
+    background:linear-gradient(90deg,#3b82f6,#2563eb);
+
+}
+
+.green{
+
+    background:linear-gradient(90deg,#22c55e,#16a34a);
+
+}
+
+.purple{
+
+    background:linear-gradient(90deg,#8b5cf6,#6d28d9);
+
+}
+
+.orange{
+
+    background:linear-gradient(90deg,#f59e0b,#ea580c);
+
+}
+
+.red{
+
+    background:linear-gradient(90deg,#ef4444,#dc2626);
+
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+    margin-top:auto;
+
+    text-align:center;
+
+    padding-top:35px;
+
+    border-top:1px solid #e5e7eb;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    .container{
+
+        flex-direction:column;
+
+    }
+
+    .left{
+
+        width:100%;
+
+        padding:40px 30px;
+
+    }
+
+    .right{
+
+        padding:35px 25px;
+
+    }
+
+    .right h2{
+
+        font-size:32px;
+
+    }
+
+    .logo h1{
+
+        font-size:46px;
+
+    }
+
+}
